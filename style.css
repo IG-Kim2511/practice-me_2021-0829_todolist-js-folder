@@ -1,0 +1,29 @@
+html{
+    text-align: center;
+}
+
+.input_box{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.title{
+    margin-top: 5rem;
+    color: blue;
+}
+
+.todo_ul{
+list-style-position: inside ;
+}
+/*  */
+.todo_delete, .todo_done{
+    margin: .5rem;
+
+}
+/*  */
+.clear{
+    text-decoration: line-through;
+}
+
+.todo_li{
+    color: blue;
+}
