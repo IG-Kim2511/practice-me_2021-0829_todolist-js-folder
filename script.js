@@ -73,3 +73,22 @@ function clearAll(params) {
 }
 
 // js 8, click 'done' on list, middle line on t he list
+// envent bubbling
+
+
+todoInput, addEventListener("click",clear);
+function clear(e) {
+    if (e.target.classList.contains("todo_done")) {
+        e.target.parentNode.classList.toggle("clear");
+        
+    
+    } 
+    else if(e.target.classList.contains("todo_delete")){
+
+        e.target.parentNode.remove();
+    }
+    else {
+     return;
+    }
+    
+}
