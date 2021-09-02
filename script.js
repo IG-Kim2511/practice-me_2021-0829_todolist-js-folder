@@ -19,6 +19,13 @@ const todoDone = document.querySelector('.todo_done');
 
 todoSubmit.addEventListener('click',todolist);
 
+// enter key
+todoInput.addEventListener("keypress",function (e) {
+    if (e.key ==="Enter") {
+        todolist();
+       
+    }    
+});
 
 
 // 🍀function
@@ -54,3 +61,15 @@ function todolist_ig(params) {
 
 
 }
+
+
+// js 6 , cleck clear all, clear element
+
+todoClearAll.addEventListener("click",clearAll);
+
+function clearAll(params) {
+    location.reload();
+    
+}
+
+// js 8, click 'done' on list, middle line on t he list
